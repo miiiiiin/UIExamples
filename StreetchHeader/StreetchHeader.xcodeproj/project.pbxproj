@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D5CF26126C4DE1C00E530D6 /* DayOfWeekView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF26026C4DE1C00E530D6 /* DayOfWeekView.xib */; };
+		7D5CF26326C4DFDE00E530D6 /* DayOfWeekCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF26226C4DFDE00E530D6 /* DayOfWeekCell.xib */; };
+		7D5CF26526C4DFE900E530D6 /* DayOfWeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF26426C4DFE900E530D6 /* DayOfWeekCell.swift */; };
 		7D70901726C4C71300C6E9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70901626C4C71300C6E9C2 /* AppDelegate.swift */; };
 		7D70901926C4C71300C6E9C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70901826C4C71300C6E9C2 /* SceneDelegate.swift */; };
 		7D70901B26C4C71300C6E9C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70901A26C4C71300C6E9C2 /* ViewController.swift */; };
-		7D70901E26C4C71300C6E9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D70901C26C4C71300C6E9C2 /* Main.storyboard */; };
 		7D70902026C4C71500C6E9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D70901F26C4C71500C6E9C2 /* Assets.xcassets */; };
 		7D70902326C4C71500C6E9C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D70902126C4C71500C6E9C2 /* LaunchScreen.storyboard */; };
 		7D70902E26C4C71500C6E9C2 /* StreetchHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70902D26C4C71500C6E9C2 /* StreetchHeaderTests.swift */; };
 		7D70903926C4C71500C6E9C2 /* StreetchHeaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70903826C4C71500C6E9C2 /* StreetchHeaderUITests.swift */; };
+		7D70904726C4C93000C6E9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D70904626C4C93000C6E9C2 /* Main.storyboard */; };
+		7D70904A26C4C9AC00C6E9C2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70904926C4C9AC00C6E9C2 /* Theme.swift */; };
+		7D70905326C4CCF200C6E9C2 /* DayOfWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70905226C4CCF200C6E9C2 /* DayOfWeekView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D5CF26026C4DE1C00E530D6 /* DayOfWeekView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayOfWeekView.xib; sourceTree = "<group>"; };
+		7D5CF26226C4DFDE00E530D6 /* DayOfWeekCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayOfWeekCell.xib; sourceTree = "<group>"; };
+		7D5CF26426C4DFE900E530D6 /* DayOfWeekCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeekCell.swift; sourceTree = "<group>"; };
 		7D70901326C4C71300C6E9C2 /* StreetchHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetchHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D70901626C4C71300C6E9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D70901826C4C71300C6E9C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7D70901A26C4C71300C6E9C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7D70901D26C4C71300C6E9C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D70901F26C4C71500C6E9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D70902226C4C71500C6E9C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D70902426C4C71500C6E9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		7D70903426C4C71500C6E9C2 /* StreetchHeaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreetchHeaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D70903826C4C71500C6E9C2 /* StreetchHeaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetchHeaderUITests.swift; sourceTree = "<group>"; };
 		7D70903A26C4C71500C6E9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D70904626C4C93000C6E9C2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7D70904926C4C9AC00C6E9C2 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		7D70905226C4CCF200C6E9C2 /* DayOfWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeekView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,20 @@
 		7D70901526C4C71300C6E9C2 /* StreetchHeader */ = {
 			isa = PBXGroup;
 			children = (
+				7D70905026C4CC9700C6E9C2 /* Cell */,
+				7D70904F26C4CA0100C6E9C2 /* Util */,
+				7D70904E26C4C9FE00C6E9C2 /* Views */,
+				7D70904D26C4C9F100C6E9C2 /* Extensions */,
+				7D70904C26C4C9EC00C6E9C2 /* Model */,
+				7D70904B26C4C9E500C6E9C2 /* Common */,
+				7D70904826C4C9A800C6E9C2 /* Style */,
 				7D70901626C4C71300C6E9C2 /* AppDelegate.swift */,
 				7D70901826C4C71300C6E9C2 /* SceneDelegate.swift */,
 				7D70901A26C4C71300C6E9C2 /* ViewController.swift */,
-				7D70901C26C4C71300C6E9C2 /* Main.storyboard */,
 				7D70901F26C4C71500C6E9C2 /* Assets.xcassets */,
 				7D70902126C4C71500C6E9C2 /* LaunchScreen.storyboard */,
 				7D70902426C4C71500C6E9C2 /* Info.plist */,
+				7D70904626C4C93000C6E9C2 /* Main.storyboard */,
 			);
 			path = StreetchHeader;
 			sourceTree = "<group>";
@@ -126,6 +143,68 @@
 				7D70903A26C4C71500C6E9C2 /* Info.plist */,
 			);
 			path = StreetchHeaderUITests;
+			sourceTree = "<group>";
+		};
+		7D70904826C4C9A800C6E9C2 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				7D70904926C4C9AC00C6E9C2 /* Theme.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		7D70904B26C4C9E500C6E9C2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7D70904C26C4C9EC00C6E9C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D70904D26C4C9F100C6E9C2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7D70904E26C4C9FE00C6E9C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D70905226C4CCF200C6E9C2 /* DayOfWeekView.swift */,
+				7D5CF26026C4DE1C00E530D6 /* DayOfWeekView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D70904F26C4CA0100C6E9C2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		7D70905026C4CC9700C6E9C2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7D70905126C4CC9C00C6E9C2 /* Vertical */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7D70905126C4CC9C00C6E9C2 /* Vertical */ = {
+			isa = PBXGroup;
+			children = (
+				7D5CF26226C4DFDE00E530D6 /* DayOfWeekCell.xib */,
+				7D5CF26426C4DFE900E530D6 /* DayOfWeekCell.swift */,
+			);
+			path = Vertical;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +310,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D5CF26126C4DE1C00E530D6 /* DayOfWeekView.xib in Resources */,
+				7D70904726C4C93000C6E9C2 /* Main.storyboard in Resources */,
 				7D70902326C4C71500C6E9C2 /* LaunchScreen.storyboard in Resources */,
+				7D5CF26326C4DFDE00E530D6 /* DayOfWeekCell.xib in Resources */,
 				7D70902026C4C71500C6E9C2 /* Assets.xcassets in Resources */,
-				7D70901E26C4C71300C6E9C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +340,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D70901B26C4C71300C6E9C2 /* ViewController.swift in Sources */,
+				7D70904A26C4C9AC00C6E9C2 /* Theme.swift in Sources */,
+				7D5CF26526C4DFE900E530D6 /* DayOfWeekCell.swift in Sources */,
 				7D70901726C4C71300C6E9C2 /* AppDelegate.swift in Sources */,
+				7D70905326C4CCF200C6E9C2 /* DayOfWeekView.swift in Sources */,
 				7D70901926C4C71300C6E9C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +380,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7D70901C26C4C71300C6E9C2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D70901D26C4C71300C6E9C2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7D70902126C4C71500C6E9C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
