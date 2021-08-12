@@ -36,6 +36,7 @@ extension DayOfWeekVerticalContainerCell: UICollectionViewDataSource {
         
         let item = items[indexPath.row]
         
+//        cell.weatherView.configCell(slot: item) //fixme
         cell.weatherView.setClearBackgroundColor()
         cell.backgroundColor = .clear
         

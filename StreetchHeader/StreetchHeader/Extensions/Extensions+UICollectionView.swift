@@ -13,6 +13,6 @@ extension UICollectionView {
     }
     
     func dequeueReusableCell<T: UICollectionViewCell & NibForName> (_ reusableCell: T.Type, for indexPath: IndexPath) -> T? {
-        return dequeueReusableCell(withReuseIdentifier: reusableCell.identifier, for: indexPath)
+        return dequeueReusableCell(withReuseIdentifier: reusableCell.identifier, for: indexPath) as? T
     }
 }
