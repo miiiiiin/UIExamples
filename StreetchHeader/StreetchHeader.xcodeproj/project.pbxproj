@@ -14,6 +14,9 @@
 		7D5CF26926C4E19700E530D6 /* DayOfWeekVerticalContainerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D5CF26826C4E19700E530D6 /* DayOfWeekVerticalContainerCell.xib */; };
 		7D5CF26B26C4E3F300E530D6 /* Extensions+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF26A26C4E3F300E530D6 /* Extensions+UICollectionView.swift */; };
 		7D5CF26D26C4E42700E530D6 /* NibForName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF26C26C4E42700E530D6 /* NibForName.swift */; };
+		7D5CF27126C4E8FD00E530D6 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF27026C4E8FD00E530D6 /* DayOfWeek.swift */; };
+		7D5CF27326C4E9A500E530D6 /* WeatherDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF27226C4E9A500E530D6 /* WeatherDay.swift */; };
+		7D5CF27526C4EAA100E530D6 /* IdentifiableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF27426C4EAA100E530D6 /* IdentifiableType.swift */; };
 		7D70901726C4C71300C6E9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70901626C4C71300C6E9C2 /* AppDelegate.swift */; };
 		7D70901926C4C71300C6E9C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70901826C4C71300C6E9C2 /* SceneDelegate.swift */; };
 		7D70901B26C4C71300C6E9C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70901A26C4C71300C6E9C2 /* ViewController.swift */; };
@@ -51,6 +54,9 @@
 		7D5CF26826C4E19700E530D6 /* DayOfWeekVerticalContainerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayOfWeekVerticalContainerCell.xib; sourceTree = "<group>"; };
 		7D5CF26A26C4E3F300E530D6 /* Extensions+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UICollectionView.swift"; sourceTree = "<group>"; };
 		7D5CF26C26C4E42700E530D6 /* NibForName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibForName.swift; sourceTree = "<group>"; };
+		7D5CF27026C4E8FD00E530D6 /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
+		7D5CF27226C4E9A500E530D6 /* WeatherDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDay.swift; sourceTree = "<group>"; };
+		7D5CF27426C4EAA100E530D6 /* IdentifiableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableType.swift; sourceTree = "<group>"; };
 		7D70901326C4C71300C6E9C2 /* StreetchHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetchHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D70901626C4C71300C6E9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D70901826C4C71300C6E9C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +170,7 @@
 		7D70904B26C4C9E500C6E9C2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7D5CF27426C4EAA100E530D6 /* IdentifiableType.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -171,6 +178,8 @@
 		7D70904C26C4C9EC00C6E9C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7D5CF27026C4E8FD00E530D6 /* DayOfWeek.swift */,
+				7D5CF27226C4E9A500E530D6 /* WeatherDay.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -353,13 +362,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D70901B26C4C71300C6E9C2 /* ViewController.swift in Sources */,
+				7D5CF27126C4E8FD00E530D6 /* DayOfWeek.swift in Sources */,
 				7D70904A26C4C9AC00C6E9C2 /* Theme.swift in Sources */,
+				7D5CF27526C4EAA100E530D6 /* IdentifiableType.swift in Sources */,
 				7D5CF26526C4DFE900E530D6 /* DayOfWeekCell.swift in Sources */,
 				7D5CF26726C4E17100E530D6 /* DayOfWeekVerticalContainerCell.swift in Sources */,
 				7D5CF26B26C4E3F300E530D6 /* Extensions+UICollectionView.swift in Sources */,
 				7D5CF26D26C4E42700E530D6 /* NibForName.swift in Sources */,
 				7D70901726C4C71300C6E9C2 /* AppDelegate.swift in Sources */,
 				7D70905326C4CCF200C6E9C2 /* DayOfWeekView.swift in Sources */,
+				7D5CF27326C4E9A500E530D6 /* WeatherDay.swift in Sources */,
 				7D70901926C4C71300C6E9C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

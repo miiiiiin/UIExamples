@@ -33,6 +33,13 @@ class DayOfWeekView: UIView {
         representImage.contentMode = .scaleAspectFit
     }
     
+    func configCell(_ item: WeatherDay) {
+        self.dayOfWeekNameLabel.text = item.dayOfWeek.name
+        self.representImage.image = UIImage(named: item.imgName)?.withRenderingMode(.alwaysTemplate)
+        self.highestLabel.text = String(item.highestTemperature)
+        self.lowestLabel.text = String(item.lowestTemperature)
+    }
+    
     func setClearBackgroundColor() {
         self.backgroundColor = .clear
         containerView.backgroundColor = .clear

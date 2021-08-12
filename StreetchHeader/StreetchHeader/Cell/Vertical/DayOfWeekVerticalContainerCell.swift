@@ -12,7 +12,7 @@ class DayOfWeekVerticalContainerCell: UICollectionViewCell, NibForName {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var items: [String] = [] //fixme
+    var items: [WeatherDay] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,8 +35,8 @@ extension DayOfWeekVerticalContainerCell: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(DayOfWeekCell.self, for: indexPath) else { return UICollectionViewCell() }
         
         let item = items[indexPath.row]
-        
-//        cell.weatherView.configCell(slot: item) //fixme
+
+        cell.weatherView.configCell(item)
         cell.weatherView.setClearBackgroundColor()
         cell.backgroundColor = .clear
         
