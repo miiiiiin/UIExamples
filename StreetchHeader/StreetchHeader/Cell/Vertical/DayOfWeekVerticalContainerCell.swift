@@ -22,7 +22,14 @@ class DayOfWeekVerticalContainerCell: UICollectionViewCell, NibForName {
         collectionView.backgroundColor = .clear
         collectionView.isScrollEnabled = false
         collectionView.alwaysBounceVertical = false
+    }
     
+    func reloadData(items: [WeatherDay]) {
+        self.items = items
+        collectionView.reloadData()
+        guard let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
+        flowLayout.scrollDirection = .vertical
+        flowLayout.itemSize = CGSize(width: self.frame.width, height: 50)
     }
 }
 

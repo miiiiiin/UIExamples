@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class DayOfWeekView: UIView {
+class DayOfWeekView: UIView, NibLodable {
     
     @IBOutlet var containerView: UIView!
     
@@ -30,6 +30,7 @@ class DayOfWeekView: UIView {
     }
     
     private func commonInit() {
+        setUpFromNib()
         representImage.contentMode = .scaleAspectFit
     }
     

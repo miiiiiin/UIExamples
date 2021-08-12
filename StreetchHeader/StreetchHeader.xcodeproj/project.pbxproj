@@ -21,6 +21,7 @@
 		7D5CF27B26C4EDD500E530D6 /* UICollectionViewDelegateLayoutAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF27A26C4EDD500E530D6 /* UICollectionViewDelegateLayoutAttribute.swift */; };
 		7D5CF27D26C4EE4200E530D6 /* StickyLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF27C26C4EE4200E530D6 /* StickyLayoutAttributes.swift */; };
 		7D5CF27F26C4F2DF00E530D6 /* OverlayAlphaLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF27E26C4F2DF00E530D6 /* OverlayAlphaLayoutAttributes.swift */; };
+		7D5CF28126C4F56000E530D6 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF28026C4F56000E530D6 /* NibLoadable.swift */; };
 		7D70901726C4C71300C6E9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70901626C4C71300C6E9C2 /* AppDelegate.swift */; };
 		7D70901926C4C71300C6E9C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70901826C4C71300C6E9C2 /* SceneDelegate.swift */; };
 		7D70901B26C4C71300C6E9C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70901A26C4C71300C6E9C2 /* ViewController.swift */; };
@@ -65,6 +66,7 @@
 		7D5CF27A26C4EDD500E530D6 /* UICollectionViewDelegateLayoutAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewDelegateLayoutAttribute.swift; sourceTree = "<group>"; };
 		7D5CF27C26C4EE4200E530D6 /* StickyLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyLayoutAttributes.swift; sourceTree = "<group>"; };
 		7D5CF27E26C4F2DF00E530D6 /* OverlayAlphaLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayAlphaLayoutAttributes.swift; sourceTree = "<group>"; };
+		7D5CF28026C4F56000E530D6 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		7D70901326C4C71300C6E9C2 /* StreetchHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetchHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D70901626C4C71300C6E9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D70901826C4C71300C6E9C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				7D5CF26C26C4E42700E530D6 /* NibForName.swift */,
+				7D5CF28026C4F56000E530D6 /* NibLoadable.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D70901B26C4C71300C6E9C2 /* ViewController.swift in Sources */,
+				7D5CF28126C4F56000E530D6 /* NibLoadable.swift in Sources */,
 				7D5CF27126C4E8FD00E530D6 /* DayOfWeek.swift in Sources */,
 				7D5CF27F26C4F2DF00E530D6 /* OverlayAlphaLayoutAttributes.swift in Sources */,
 				7D70904A26C4C9AC00C6E9C2 /* Theme.swift in Sources */,
