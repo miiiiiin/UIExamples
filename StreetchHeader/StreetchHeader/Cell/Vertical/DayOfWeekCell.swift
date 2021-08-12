@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class DayOfWeekCell: UICollectionViewCell {
+class DayOfWeekCell: UICollectionViewCell, NibForName {
     
     @IBOutlet weak var weatherView: DayOfWeekView!
     
