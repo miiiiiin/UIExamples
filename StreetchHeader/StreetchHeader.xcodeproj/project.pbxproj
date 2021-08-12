@@ -17,6 +17,10 @@
 		7D5CF27126C4E8FD00E530D6 /* DayOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF27026C4E8FD00E530D6 /* DayOfWeek.swift */; };
 		7D5CF27326C4E9A500E530D6 /* WeatherDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF27226C4E9A500E530D6 /* WeatherDay.swift */; };
 		7D5CF27526C4EAA100E530D6 /* IdentifiableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF27426C4EAA100E530D6 /* IdentifiableType.swift */; };
+		7D5CF27826C4ECE700E530D6 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF27726C4ECE700E530D6 /* CustomLayout.swift */; };
+		7D5CF27B26C4EDD500E530D6 /* UICollectionViewDelegateLayoutAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF27A26C4EDD500E530D6 /* UICollectionViewDelegateLayoutAttribute.swift */; };
+		7D5CF27D26C4EE4200E530D6 /* StickyLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF27C26C4EE4200E530D6 /* StickyLayoutAttributes.swift */; };
+		7D5CF27F26C4F2DF00E530D6 /* OverlayAlphaLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CF27E26C4F2DF00E530D6 /* OverlayAlphaLayoutAttributes.swift */; };
 		7D70901726C4C71300C6E9C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70901626C4C71300C6E9C2 /* AppDelegate.swift */; };
 		7D70901926C4C71300C6E9C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70901826C4C71300C6E9C2 /* SceneDelegate.swift */; };
 		7D70901B26C4C71300C6E9C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70901A26C4C71300C6E9C2 /* ViewController.swift */; };
@@ -57,6 +61,10 @@
 		7D5CF27026C4E8FD00E530D6 /* DayOfWeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeek.swift; sourceTree = "<group>"; };
 		7D5CF27226C4E9A500E530D6 /* WeatherDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDay.swift; sourceTree = "<group>"; };
 		7D5CF27426C4EAA100E530D6 /* IdentifiableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableType.swift; sourceTree = "<group>"; };
+		7D5CF27726C4ECE700E530D6 /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
+		7D5CF27A26C4EDD500E530D6 /* UICollectionViewDelegateLayoutAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewDelegateLayoutAttribute.swift; sourceTree = "<group>"; };
+		7D5CF27C26C4EE4200E530D6 /* StickyLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyLayoutAttributes.swift; sourceTree = "<group>"; };
+		7D5CF27E26C4F2DF00E530D6 /* OverlayAlphaLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayAlphaLayoutAttributes.swift; sourceTree = "<group>"; };
 		7D70901326C4C71300C6E9C2 /* StreetchHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetchHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D70901626C4C71300C6E9C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D70901826C4C71300C6E9C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +108,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D5CF27626C4ECE300E530D6 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				7D5CF27726C4ECE700E530D6 /* CustomLayout.swift */,
+				7D5CF27C26C4EE4200E530D6 /* StickyLayoutAttributes.swift */,
+				7D5CF27E26C4F2DF00E530D6 /* OverlayAlphaLayoutAttributes.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		7D5CF27926C4EDB800E530D6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7D5CF27A26C4EDD500E530D6 /* UICollectionViewDelegateLayoutAttribute.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		7D70900A26C4C71300C6E9C2 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +149,8 @@
 		7D70901526C4C71300C6E9C2 /* StreetchHeader */ = {
 			isa = PBXGroup;
 			children = (
+				7D5CF27926C4EDB800E530D6 /* Protocols */,
+				7D5CF27626C4ECE300E530D6 /* Layout */,
 				7D70905026C4CC9700C6E9C2 /* Cell */,
 				7D70904F26C4CA0100C6E9C2 /* Util */,
 				7D70904E26C4C9FE00C6E9C2 /* Views */,
@@ -363,6 +391,7 @@
 			files = (
 				7D70901B26C4C71300C6E9C2 /* ViewController.swift in Sources */,
 				7D5CF27126C4E8FD00E530D6 /* DayOfWeek.swift in Sources */,
+				7D5CF27F26C4F2DF00E530D6 /* OverlayAlphaLayoutAttributes.swift in Sources */,
 				7D70904A26C4C9AC00C6E9C2 /* Theme.swift in Sources */,
 				7D5CF27526C4EAA100E530D6 /* IdentifiableType.swift in Sources */,
 				7D5CF26526C4DFE900E530D6 /* DayOfWeekCell.swift in Sources */,
@@ -372,6 +401,9 @@
 				7D70901726C4C71300C6E9C2 /* AppDelegate.swift in Sources */,
 				7D70905326C4CCF200C6E9C2 /* DayOfWeekView.swift in Sources */,
 				7D5CF27326C4E9A500E530D6 /* WeatherDay.swift in Sources */,
+				7D5CF27826C4ECE700E530D6 /* CustomLayout.swift in Sources */,
+				7D5CF27B26C4EDD500E530D6 /* UICollectionViewDelegateLayoutAttribute.swift in Sources */,
+				7D5CF27D26C4EE4200E530D6 /* StickyLayoutAttributes.swift in Sources */,
 				7D70901926C4C71300C6E9C2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

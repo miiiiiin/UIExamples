@@ -11,6 +11,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    
+
+    private lazy var flowLayout: CustomLayout = {
+        let layout = CustomLayout()
+        layout.scrollDirection = .vertical
+        return layout
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +30,7 @@ class ViewController: UIViewController {
         collectionView.register(DayOfWeekVerticalContainerCell.self)
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.collectionViewLayout = flowLayout
         collectionView.alwaysBounceVertical = false
         view.addSubview(collectionView)
     }
@@ -42,4 +51,12 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         
         return cell
     }
+}
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width, height: 700)
+    }
+
 }
