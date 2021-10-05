@@ -32,6 +32,9 @@
 		7D70904726C4C93000C6E9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D70904626C4C93000C6E9C2 /* Main.storyboard */; };
 		7D70904A26C4C9AC00C6E9C2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70904926C4C9AC00C6E9C2 /* Theme.swift */; };
 		7D70905326C4CCF200C6E9C2 /* DayOfWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70905226C4CCF200C6E9C2 /* DayOfWeekView.swift */; };
+		7D7A33C5270BDEC500EAC519 /* SummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33C4270BDEC500EAC519 /* SummaryHeaderView.swift */; };
+		7D7A33C7270BDF3600EAC519 /* SummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7A33C6270BDF3600EAC519 /* SummaryHeaderView.xib */; };
+		7D7A33C9270BE3EB00EAC519 /* WeatherHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33C8270BE3EB00EAC519 /* WeatherHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		7D70904626C4C93000C6E9C2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7D70904926C4C9AC00C6E9C2 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		7D70905226C4CCF200C6E9C2 /* DayOfWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOfWeekView.swift; sourceTree = "<group>"; };
+		7D7A33C4270BDEC500EAC519 /* SummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryHeaderView.swift; sourceTree = "<group>"; };
+		7D7A33C6270BDF3600EAC519 /* SummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryHeaderView.xib; sourceTree = "<group>"; };
+		7D7A33C8270BE3EB00EAC519 /* WeatherHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +216,7 @@
 			children = (
 				7D5CF27026C4E8FD00E530D6 /* DayOfWeek.swift */,
 				7D5CF27226C4E9A500E530D6 /* WeatherDay.swift */,
+				7D7A33C8270BE3EB00EAC519 /* WeatherHeader.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,6 +250,7 @@
 		7D70905026C4CC9700C6E9C2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				7D7A33C3270BDEBA00EAC519 /* Header */,
 				7D70905126C4CC9C00C6E9C2 /* Vertical */,
 			);
 			path = Cell;
@@ -257,6 +265,15 @@
 				7D5CF26826C4E19700E530D6 /* DayOfWeekVerticalContainerCell.xib */,
 			);
 			path = Vertical;
+			sourceTree = "<group>";
+		};
+		7D7A33C3270BDEBA00EAC519 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				7D7A33C4270BDEC500EAC519 /* SummaryHeaderView.swift */,
+				7D7A33C6270BDF3600EAC519 /* SummaryHeaderView.xib */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +385,7 @@
 				7D70902326C4C71500C6E9C2 /* LaunchScreen.storyboard in Resources */,
 				7D5CF26326C4DFDE00E530D6 /* DayOfWeekCell.xib in Resources */,
 				7D70902026C4C71500C6E9C2 /* Assets.xcassets in Resources */,
+				7D7A33C7270BDF3600EAC519 /* SummaryHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D70901B26C4C71300C6E9C2 /* ViewController.swift in Sources */,
+				7D7A33C9270BE3EB00EAC519 /* WeatherHeader.swift in Sources */,
 				7D5CF28126C4F56000E530D6 /* NibLoadable.swift in Sources */,
 				7D5CF27126C4E8FD00E530D6 /* DayOfWeek.swift in Sources */,
 				7D5CF27F26C4F2DF00E530D6 /* OverlayAlphaLayoutAttributes.swift in Sources */,
@@ -406,6 +425,7 @@
 				7D70905326C4CCF200C6E9C2 /* DayOfWeekView.swift in Sources */,
 				7D5CF27326C4E9A500E530D6 /* WeatherDay.swift in Sources */,
 				7D5CF27826C4ECE700E530D6 /* CustomLayout.swift in Sources */,
+				7D7A33C5270BDEC500EAC519 /* SummaryHeaderView.swift in Sources */,
 				7D5CF27B26C4EDD500E530D6 /* UICollectionViewDelegateLayoutAttribute.swift in Sources */,
 				7D5CF27D26C4EE4200E530D6 /* StickyLayoutAttributes.swift in Sources */,
 				7D70901926C4C71300C6E9C2 /* SceneDelegate.swift in Sources */,

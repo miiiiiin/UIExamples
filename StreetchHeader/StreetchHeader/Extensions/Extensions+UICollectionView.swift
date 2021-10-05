@@ -12,7 +12,18 @@ extension UICollectionView {
         register(reusableCell.nib, forCellWithReuseIdentifier: reusableCell.identifier)
     }
     
+    func register <T: UICollectionReusableView & NibForName> (_ reusableCell: T.Type, kind: String) {
+        register(reusableCell.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: reusableCell.identifier)
+    }
+    
     func dequeueReusableCell<T: UICollectionViewCell & NibForName> (_ reusableCell: T.Type, for indexPath: IndexPath) -> T? {
         return dequeueReusableCell(withReuseIdentifier: reusableCell.identifier, for: indexPath) as? T
+    }
+    
+    func dequeueReusableSupplementaryView <T: UICollectionReusableView & NibForName> (
+        _ reusableCell: T.Type,
+        kind: String,
+        for indexPath: IndexPath) -> T? {
+        return dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: reusableCell.identifier, for: indexPath) as? T
     }
 }

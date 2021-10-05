@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0ML-pU-pes" customClass="SummaryHeaderView" customModule="StreetchHeader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="740" height="391"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srT-Ut-202">
+                    <rect key="frame" x="349" y="44" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlk-ma-DTA">
+                    <rect key="frame" x="349" y="77" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlA-Ai-V4w">
+                    <rect key="frame" x="349" y="110" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="6Hq-f1-X0j"/>
+            <constraints>
+                <constraint firstItem="srT-Ut-202" firstAttribute="top" secondItem="6Hq-f1-X0j" secondAttribute="top" id="8Rg-vv-Msa"/>
+                <constraint firstItem="hlk-ma-DTA" firstAttribute="top" secondItem="srT-Ut-202" secondAttribute="bottom" constant="12" id="XEe-4a-7i0"/>
+                <constraint firstItem="DlA-Ai-V4w" firstAttribute="centerX" secondItem="6Hq-f1-X0j" secondAttribute="centerX" id="d4M-fI-UND"/>
+                <constraint firstItem="hlk-ma-DTA" firstAttribute="centerX" secondItem="6Hq-f1-X0j" secondAttribute="centerX" id="dsj-EU-Q9y"/>
+                <constraint firstItem="DlA-Ai-V4w" firstAttribute="top" secondItem="hlk-ma-DTA" secondAttribute="bottom" constant="12" id="hDu-Pf-nfe"/>
+                <constraint firstItem="srT-Ut-202" firstAttribute="centerX" secondItem="6Hq-f1-X0j" secondAttribute="centerX" id="sWa-c5-wdp"/>
+            </constraints>
+            <connections>
+                <outlet property="cityLabel" destination="srT-Ut-202" id="gJd-Xc-yEn"/>
+                <outlet property="temperatureLabel" destination="DlA-Ai-V4w" id="e0q-1U-GTX"/>
+                <outlet property="weatherDescLabel" destination="hlk-ma-DTA" id="w3F-j6-czW"/>
+            </connections>
+            <point key="canvasLocation" x="210.1449275362319" y="161.71875"/>
+        </collectionReusableView>
+    </objects>
+</document>

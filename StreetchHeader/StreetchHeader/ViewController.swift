@@ -10,8 +10,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    
+
+    var header: WeatherHeader = WeatherHeader(city: "Chicago", weatherDesc: "sunny", temperature: 25)
+
 
     private lazy var flowLayout: CustomLayout = {
         let layout = CustomLayout()
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.collectionViewLayout = flowLayout
         collectionView.alwaysBounceVertical = false
+        collectionView.register(SummaryHeaderView.self, kind: UICollectionView.elementKindSectionHeader)
         view.addSubview(collectionView)
     }
 
@@ -40,16 +42,33 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return WeatherDay.sample.count
-    }
+extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(DayOfWeekVerticalContainerCell.self, for: indexPath) else { return UICollectionViewCell() }
         cell.reloadData(items: WeatherDay.sample)
         return cell
+    }
+}
+
+extension ViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return WeatherDay.sample.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            guard let cell = collectionView.dequeueReusableSupplementaryView(SummaryHeaderView.self, kind: kind, for: indexPath) else { return UICollectionReusableView() }
+            cell.cityLabel.text = header.city
+            cell.weatherDescLabel.text = header.weatherDesc
+            cell.temperatureLabel.text = String(header.temperature)
+            return cell
+            
+        default:
+            return UICollectionReusableView()
+        }
     }
 }
 

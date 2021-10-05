@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: - Custom UICollectionViewLayoutAttributes -
+
 final class OverlayAlphaLayoutAttributes: UICollectionViewLayoutAttributes {
     
     var headerOverlayAlpha = CGFloat(0)
