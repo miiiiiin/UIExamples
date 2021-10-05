@@ -35,6 +35,11 @@
 		7D7A33C5270BDEC500EAC519 /* SummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33C4270BDEC500EAC519 /* SummaryHeaderView.swift */; };
 		7D7A33C7270BDF3600EAC519 /* SummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7A33C6270BDF3600EAC519 /* SummaryHeaderView.xib */; };
 		7D7A33C9270BE3EB00EAC519 /* WeatherHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33C8270BE3EB00EAC519 /* WeatherHeader.swift */; };
+		7D7A33CC270BE50A00EAC519 /* TimeSlotHorizontalContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33CB270BE50A00EAC519 /* TimeSlotHorizontalContainerCell.swift */; };
+		7D7A33CE270BE56200EAC519 /* TimeSlotHorizontalContainerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7A33CD270BE56200EAC519 /* TimeSlotHorizontalContainerCell.xib */; };
+		7D7A33D0270BE60D00EAC519 /* TimeSlotWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33CF270BE60D00EAC519 /* TimeSlotWeatherCell.swift */; };
+		7D7A33D2270BE63200EAC519 /* TimeSlotWeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7A33D1270BE63200EAC519 /* TimeSlotWeatherCell.xib */; };
+		7D7A33D4270BEC2F00EAC519 /* WeatherTimeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33D3270BEC2F00EAC519 /* WeatherTimeSlot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +94,11 @@
 		7D7A33C4270BDEC500EAC519 /* SummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryHeaderView.swift; sourceTree = "<group>"; };
 		7D7A33C6270BDF3600EAC519 /* SummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryHeaderView.xib; sourceTree = "<group>"; };
 		7D7A33C8270BE3EB00EAC519 /* WeatherHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherHeader.swift; sourceTree = "<group>"; };
+		7D7A33CB270BE50A00EAC519 /* TimeSlotHorizontalContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotHorizontalContainerCell.swift; sourceTree = "<group>"; };
+		7D7A33CD270BE56200EAC519 /* TimeSlotHorizontalContainerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSlotHorizontalContainerCell.xib; sourceTree = "<group>"; };
+		7D7A33CF270BE60D00EAC519 /* TimeSlotWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotWeatherCell.swift; sourceTree = "<group>"; };
+		7D7A33D1270BE63200EAC519 /* TimeSlotWeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSlotWeatherCell.xib; sourceTree = "<group>"; };
+		7D7A33D3270BEC2F00EAC519 /* WeatherTimeSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTimeSlot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +227,7 @@
 				7D5CF27026C4E8FD00E530D6 /* DayOfWeek.swift */,
 				7D5CF27226C4E9A500E530D6 /* WeatherDay.swift */,
 				7D7A33C8270BE3EB00EAC519 /* WeatherHeader.swift */,
+				7D7A33D3270BEC2F00EAC519 /* WeatherTimeSlot.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,6 +261,7 @@
 		7D70905026C4CC9700C6E9C2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				7D7A33CA270BE50500EAC519 /* Horizontal */,
 				7D7A33C3270BDEBA00EAC519 /* Header */,
 				7D70905126C4CC9C00C6E9C2 /* Vertical */,
 			);
@@ -274,6 +286,17 @@
 				7D7A33C6270BDF3600EAC519 /* SummaryHeaderView.xib */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		7D7A33CA270BE50500EAC519 /* Horizontal */ = {
+			isa = PBXGroup;
+			children = (
+				7D7A33CB270BE50A00EAC519 /* TimeSlotHorizontalContainerCell.swift */,
+				7D7A33CD270BE56200EAC519 /* TimeSlotHorizontalContainerCell.xib */,
+				7D7A33CF270BE60D00EAC519 /* TimeSlotWeatherCell.swift */,
+				7D7A33D1270BE63200EAC519 /* TimeSlotWeatherCell.xib */,
+			);
+			path = Horizontal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,10 +404,12 @@
 			files = (
 				7D5CF26126C4DE1C00E530D6 /* DayOfWeekView.xib in Resources */,
 				7D5CF26926C4E19700E530D6 /* DayOfWeekVerticalContainerCell.xib in Resources */,
+				7D7A33CE270BE56200EAC519 /* TimeSlotHorizontalContainerCell.xib in Resources */,
 				7D70904726C4C93000C6E9C2 /* Main.storyboard in Resources */,
 				7D70902326C4C71500C6E9C2 /* LaunchScreen.storyboard in Resources */,
 				7D5CF26326C4DFDE00E530D6 /* DayOfWeekCell.xib in Resources */,
 				7D70902026C4C71500C6E9C2 /* Assets.xcassets in Resources */,
+				7D7A33D2270BE63200EAC519 /* TimeSlotWeatherCell.xib in Resources */,
 				7D7A33C7270BDF3600EAC519 /* SummaryHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,10 +446,13 @@
 				7D5CF26726C4E17100E530D6 /* DayOfWeekVerticalContainerCell.swift in Sources */,
 				7D5CF26B26C4E3F300E530D6 /* Extensions+UICollectionView.swift in Sources */,
 				7D5CF26D26C4E42700E530D6 /* NibForName.swift in Sources */,
+				7D7A33D4270BEC2F00EAC519 /* WeatherTimeSlot.swift in Sources */,
 				7D70901726C4C71300C6E9C2 /* AppDelegate.swift in Sources */,
 				7D70905326C4CCF200C6E9C2 /* DayOfWeekView.swift in Sources */,
 				7D5CF27326C4E9A500E530D6 /* WeatherDay.swift in Sources */,
+				7D7A33CC270BE50A00EAC519 /* TimeSlotHorizontalContainerCell.swift in Sources */,
 				7D5CF27826C4ECE700E530D6 /* CustomLayout.swift in Sources */,
+				7D7A33D0270BE60D00EAC519 /* TimeSlotWeatherCell.swift in Sources */,
 				7D7A33C5270BDEC500EAC519 /* SummaryHeaderView.swift in Sources */,
 				7D5CF27B26C4EDD500E530D6 /* UICollectionViewDelegateLayoutAttribute.swift in Sources */,
 				7D5CF27D26C4EE4200E530D6 /* StickyLayoutAttributes.swift in Sources */,

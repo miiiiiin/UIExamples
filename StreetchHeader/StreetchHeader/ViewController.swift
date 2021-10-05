@@ -29,11 +29,12 @@ class ViewController: UIViewController {
     private func setUp() {
         view.backgroundColor = .white
         collectionView.register(DayOfWeekVerticalContainerCell.self)
+        collectionView.register(TimeSlotHorizontalContainerCell.self)
+        collectionView.register(SummaryHeaderView.self, kind: UICollectionView.elementKindSectionHeader)
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.collectionViewLayout = flowLayout
         collectionView.alwaysBounceVertical = false
-        collectionView.register(SummaryHeaderView.self, kind: UICollectionView.elementKindSectionHeader)
         view.addSubview(collectionView)
     }
 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hjn-Xn-OBL" customClass="TimeSlotWeatherCell" customModule="StreetchHeader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="284"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="284"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-qH-5XO">
+                        <rect key="frame" x="159" y="44" width="34.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2y6-Pv-4iE">
+                        <rect key="frame" x="165" y="100.5" width="20.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="gpg-Bl-M8W">
+                        <rect key="frame" x="165" y="72.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="gpg-Bl-M8W" secondAttribute="height" multiplier="1:1" id="ojE-cn-uh5"/>
+                            <constraint firstAttribute="width" constant="20" id="u2A-xQ-6E7"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="la5-j6-7CA"/>
+            <constraints>
+                <constraint firstItem="gpg-Bl-M8W" firstAttribute="centerX" secondItem="la5-j6-7CA" secondAttribute="centerX" id="EV7-j8-8io"/>
+                <constraint firstItem="gpg-Bl-M8W" firstAttribute="top" secondItem="JiZ-qH-5XO" secondAttribute="bottom" constant="8" id="En2-ee-mVO"/>
+                <constraint firstItem="JiZ-qH-5XO" firstAttribute="top" secondItem="la5-j6-7CA" secondAttribute="top" id="Go0-r8-9Ek"/>
+                <constraint firstItem="2y6-Pv-4iE" firstAttribute="centerX" secondItem="la5-j6-7CA" secondAttribute="centerX" id="QZf-86-gVA"/>
+                <constraint firstItem="2y6-Pv-4iE" firstAttribute="top" secondItem="gpg-Bl-M8W" secondAttribute="bottom" constant="8" id="XcX-FP-Xy7"/>
+                <constraint firstItem="JiZ-qH-5XO" firstAttribute="centerX" secondItem="la5-j6-7CA" secondAttribute="centerX" id="jee-Ui-cgh"/>
+            </constraints>
+            <size key="customSize" width="350" height="284"/>
+            <connections>
+                <outlet property="representImageView" destination="gpg-Bl-M8W" id="PgU-a7-dUw"/>
+                <outlet property="temperatureLabel" destination="2y6-Pv-4iE" id="NsP-RB-Mpf"/>
+                <outlet property="timeLabel" destination="JiZ-qH-5XO" id="x0A-Xj-tlX"/>
+            </connections>
+            <point key="canvasLocation" x="210.1449275362319" y="18.080357142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>
