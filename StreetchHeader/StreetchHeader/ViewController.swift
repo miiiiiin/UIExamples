@@ -12,7 +12,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
 
     var header: WeatherHeader = WeatherHeader(city: "Chicago", weatherDesc: "sunny", temperature: 25)
-
+    
+    var sections: [CellType] = [
+        .dayOfWeek(WeatherDaySlotSection(items: WeatherDaySlot.sample)),
+        .timeHorizontal(WeatherTimeSlotSection(items: WeatherTimeSlot.sample))
+    ]
 
     private lazy var flowLayout: CustomLayout = {
         let layout = CustomLayout()
@@ -37,25 +41,44 @@ class ViewController: UIViewController {
         collectionView.alwaysBounceVertical = false
         view.addSubview(collectionView)
     }
-
-    
-
 }
 
 
 extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(DayOfWeekVerticalContainerCell.self, for: indexPath) else { return UICollectionViewCell() }
-        cell.reloadData(items: WeatherDay.sample)
-        return cell
+        let section = self.sections[indexPath.section]
+        
+        switch section.identifier {
+        case DayOfWeekVerticalContainerCell.identifier:
+            guard let cell = collectionView.dequeueReusableCell(DayOfWeekVerticalContainerCell.self, for: indexPath) else { return UICollectionViewCell() }
+//            cell.reloadData(items: section.items()) //fixme
+            cell.backgroundColor = .clear
+            return cell
+            
+        case TimeSlotHorizontalContainerCell.identifier:
+            guard let cell = collectionView.dequeueReusableCell(TimeSlotHorizontalContainerCell.self, for: indexPath) else { return UICollectionViewCell() }
+//            cell.reloadData(items: section.items()) //fixme
+            return cell
+        default:
+            break
+        }
+//        guard let cell = collectionView.dequeueReusableCell(DayOfWeekVerticalContainerCell.self, for: indexPath) else { return UICollectionViewCell() }
+//        cell.reloadData(items: WeatherDay.sample)
+//        return cell
+        
+        return UICollectionViewCell()
     }
 }
 
 extension ViewController: UICollectionViewDataSource {
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        self.sections.count
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return WeatherDay.sample.count
+        return self.sections[section].itemCount
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -71,6 +94,18 @@ extension ViewController: UICollectionViewDataSource {
             return UICollectionReusableView()
         }
     }
+        
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        let section = self.sections[section]
+        switch section.identifier {
+        case TimeSlotHorizontalContainerCell.identifier:
+            return CGSize(width: collectionView.frame.width, height: 100) // fixme
+//            return CGSize(width: collectionView.rowWidth, height: Metrics.HeaderHeight)
+        default:
+            return .zero
+        }
+    }
+
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout {

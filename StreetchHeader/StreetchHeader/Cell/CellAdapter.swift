@@ -8,5 +8,8 @@
 import Foundation
 
 protocol CellAdapter {
+    var identifier: String { get }
+    var itemCount: Int { get }
     
+//    func item<T: Equatable>(for index: Int) -> T?
 }
