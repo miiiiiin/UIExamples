@@ -40,6 +40,11 @@
 		7D7A33D0270BE60D00EAC519 /* TimeSlotWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33CF270BE60D00EAC519 /* TimeSlotWeatherCell.swift */; };
 		7D7A33D2270BE63200EAC519 /* TimeSlotWeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D7A33D1270BE63200EAC519 /* TimeSlotWeatherCell.xib */; };
 		7D7A33D4270BEC2F00EAC519 /* WeatherTimeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33D3270BEC2F00EAC519 /* WeatherTimeSlot.swift */; };
+		7D7A33D6270BEE0400EAC519 /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33D5270BEE0400EAC519 /* CellType.swift */; };
+		7D7A33D8270BEE3C00EAC519 /* CellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33D7270BEE3C00EAC519 /* CellAdapter.swift */; };
+		7D7A33DA270BEE5800EAC519 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33D9270BEE5800EAC519 /* Sections.swift */; };
+		7D7A33DC270BEE7300EAC519 /* SectionModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33DB270BEE7300EAC519 /* SectionModelType.swift */; };
+		7D7A33DE270BEF6300EAC519 /* WeatherDaySlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33DD270BEF6300EAC519 /* WeatherDaySlot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +104,11 @@
 		7D7A33CF270BE60D00EAC519 /* TimeSlotWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotWeatherCell.swift; sourceTree = "<group>"; };
 		7D7A33D1270BE63200EAC519 /* TimeSlotWeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSlotWeatherCell.xib; sourceTree = "<group>"; };
 		7D7A33D3270BEC2F00EAC519 /* WeatherTimeSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTimeSlot.swift; sourceTree = "<group>"; };
+		7D7A33D5270BEE0400EAC519 /* CellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
+		7D7A33D7270BEE3C00EAC519 /* CellAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellAdapter.swift; sourceTree = "<group>"; };
+		7D7A33D9270BEE5800EAC519 /* Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
+		7D7A33DB270BEE7300EAC519 /* SectionModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModelType.swift; sourceTree = "<group>"; };
+		7D7A33DD270BEF6300EAC519 /* WeatherDaySlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDaySlot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				7D5CF27426C4EAA100E530D6 /* IdentifiableType.swift */,
+				7D7A33DB270BEE7300EAC519 /* SectionModelType.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -228,6 +239,8 @@
 				7D5CF27226C4E9A500E530D6 /* WeatherDay.swift */,
 				7D7A33C8270BE3EB00EAC519 /* WeatherHeader.swift */,
 				7D7A33D3270BEC2F00EAC519 /* WeatherTimeSlot.swift */,
+				7D7A33D9270BEE5800EAC519 /* Sections.swift */,
+				7D7A33DD270BEF6300EAC519 /* WeatherDaySlot.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +277,8 @@
 				7D7A33CA270BE50500EAC519 /* Horizontal */,
 				7D7A33C3270BDEBA00EAC519 /* Header */,
 				7D70905126C4CC9C00C6E9C2 /* Vertical */,
+				7D7A33D5270BEE0400EAC519 /* CellType.swift */,
+				7D7A33D7270BEE3C00EAC519 /* CellAdapter.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -440,20 +455,25 @@
 				7D5CF28126C4F56000E530D6 /* NibLoadable.swift in Sources */,
 				7D5CF27126C4E8FD00E530D6 /* DayOfWeek.swift in Sources */,
 				7D5CF27F26C4F2DF00E530D6 /* OverlayAlphaLayoutAttributes.swift in Sources */,
+				7D7A33D8270BEE3C00EAC519 /* CellAdapter.swift in Sources */,
 				7D70904A26C4C9AC00C6E9C2 /* Theme.swift in Sources */,
 				7D5CF27526C4EAA100E530D6 /* IdentifiableType.swift in Sources */,
 				7D5CF26526C4DFE900E530D6 /* DayOfWeekCell.swift in Sources */,
 				7D5CF26726C4E17100E530D6 /* DayOfWeekVerticalContainerCell.swift in Sources */,
+				7D7A33DA270BEE5800EAC519 /* Sections.swift in Sources */,
 				7D5CF26B26C4E3F300E530D6 /* Extensions+UICollectionView.swift in Sources */,
 				7D5CF26D26C4E42700E530D6 /* NibForName.swift in Sources */,
 				7D7A33D4270BEC2F00EAC519 /* WeatherTimeSlot.swift in Sources */,
 				7D70901726C4C71300C6E9C2 /* AppDelegate.swift in Sources */,
+				7D7A33DC270BEE7300EAC519 /* SectionModelType.swift in Sources */,
 				7D70905326C4CCF200C6E9C2 /* DayOfWeekView.swift in Sources */,
 				7D5CF27326C4E9A500E530D6 /* WeatherDay.swift in Sources */,
 				7D7A33CC270BE50A00EAC519 /* TimeSlotHorizontalContainerCell.swift in Sources */,
 				7D5CF27826C4ECE700E530D6 /* CustomLayout.swift in Sources */,
 				7D7A33D0270BE60D00EAC519 /* TimeSlotWeatherCell.swift in Sources */,
 				7D7A33C5270BDEC500EAC519 /* SummaryHeaderView.swift in Sources */,
+				7D7A33DE270BEF6300EAC519 /* WeatherDaySlot.swift in Sources */,
+				7D7A33D6270BEE0400EAC519 /* CellType.swift in Sources */,
 				7D5CF27B26C4EDD500E530D6 /* UICollectionViewDelegateLayoutAttribute.swift in Sources */,
 				7D5CF27D26C4EE4200E530D6 /* StickyLayoutAttributes.swift in Sources */,
 				7D70901926C4C71300C6E9C2 /* SceneDelegate.swift in Sources */,
