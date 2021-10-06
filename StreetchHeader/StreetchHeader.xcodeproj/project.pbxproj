@@ -46,6 +46,9 @@
 		7D7A33DC270BEE7300EAC519 /* SectionModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33DB270BEE7300EAC519 /* SectionModelType.swift */; };
 		7D7A33DE270BEF6300EAC519 /* WeatherDaySlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A33DD270BEF6300EAC519 /* WeatherDaySlot.swift */; };
 		7DE098C7270D42B600C9E09E /* Extensions+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE098C6270D42B600C9E09E /* Extensions+CALayer.swift */; };
+		7DE098C9270D4C4F00C9E09E /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE098C8270D4C4F00C9E09E /* ViewStyle.swift */; };
+		7DE098CB270D4D0A00C9E09E /* UILabel+STyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE098CA270D4D0A00C9E09E /* UILabel+STyle.swift */; };
+		7DE098CD270D4D3800C9E09E /* Extensions+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE098CC270D4D3800C9E09E /* Extensions+UILabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,9 @@
 		7D7A33DB270BEE7300EAC519 /* SectionModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModelType.swift; sourceTree = "<group>"; };
 		7D7A33DD270BEF6300EAC519 /* WeatherDaySlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDaySlot.swift; sourceTree = "<group>"; };
 		7DE098C6270D42B600C9E09E /* Extensions+CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+CALayer.swift"; sourceTree = "<group>"; };
+		7DE098C8270D4C4F00C9E09E /* ViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
+		7DE098CA270D4D0A00C9E09E /* UILabel+STyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+STyle.swift"; sourceTree = "<group>"; };
+		7DE098CC270D4D3800C9E09E /* Extensions+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UILabel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				7D70904926C4C9AC00C6E9C2 /* Theme.swift */,
+				7DE098C8270D4C4F00C9E09E /* ViewStyle.swift */,
+				7DE098CA270D4D0A00C9E09E /* UILabel+STyle.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -252,6 +260,7 @@
 			children = (
 				7D5CF26A26C4E3F300E530D6 /* Extensions+UICollectionView.swift */,
 				7DE098C6270D42B600C9E09E /* Extensions+CALayer.swift */,
+				7DE098CC270D4D3800C9E09E /* Extensions+UILabel.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -470,13 +479,16 @@
 				7D70901726C4C71300C6E9C2 /* AppDelegate.swift in Sources */,
 				7D7A33DC270BEE7300EAC519 /* SectionModelType.swift in Sources */,
 				7D70905326C4CCF200C6E9C2 /* DayOfWeekView.swift in Sources */,
+				7DE098CD270D4D3800C9E09E /* Extensions+UILabel.swift in Sources */,
 				7D5CF27326C4E9A500E530D6 /* WeatherDay.swift in Sources */,
 				7D7A33CC270BE50A00EAC519 /* TimeSlotHorizontalContainerCell.swift in Sources */,
 				7D5CF27826C4ECE700E530D6 /* CustomLayout.swift in Sources */,
 				7D7A33D0270BE60D00EAC519 /* TimeSlotWeatherCell.swift in Sources */,
 				7D7A33C5270BDEC500EAC519 /* SummaryHeaderView.swift in Sources */,
+				7DE098CB270D4D0A00C9E09E /* UILabel+STyle.swift in Sources */,
 				7D7A33DE270BEF6300EAC519 /* WeatherDaySlot.swift in Sources */,
 				7DE098C7270D42B600C9E09E /* Extensions+CALayer.swift in Sources */,
+				7DE098C9270D4C4F00C9E09E /* ViewStyle.swift in Sources */,
 				7D7A33D6270BEE0400EAC519 /* CellType.swift in Sources */,
 				7D5CF27B26C4EDD500E530D6 /* UICollectionViewDelegateLayoutAttribute.swift in Sources */,
 				7D5CF27D26C4EE4200E530D6 /* StickyLayoutAttributes.swift in Sources */,

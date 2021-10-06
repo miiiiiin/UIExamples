@@ -23,17 +23,24 @@ class DayOfWeekVerticalContainerCell: UICollectionViewCell, NibForName {
         collectionView.backgroundColor = .clear
         collectionView.isScrollEnabled = false
         collectionView.alwaysBounceVertical = false
+        NotificationCenter.default.addObserver(self, selector: #selector(handleSetOffset), name: Notification.Name(rawValue: NotificationNames.setOffset), object: nil)
     }
     
     func reloadData(items: [WeatherDaySlot]) {
         self.items = items
         collectionView.reloadData()
-        guard let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
-        flowLayout.scrollDirection = .vertical
-        flowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 50)
-        
+        if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowLayout.scrollDirection = .vertical
+            flowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 50)
+        }
         print("dayofweek cell items: \(items.count)")
-        
+    }
+    
+    @objc func handleSetOffset(notification: Notification) {
+        if let offset = notification.object as? CGFloat {
+            collectionView.contentOffset = CGPoint(x: 0, y: offset)
+            print("handlesetoffset: \(offset)")
+        }
     }
 }
 

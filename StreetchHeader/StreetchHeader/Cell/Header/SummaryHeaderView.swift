@@ -14,14 +14,14 @@ class SummaryHeaderView: UICollectionReusableView, NibForName {
     @IBOutlet var weatherDescLabel: UILabel!
     @IBOutlet var temperatureLabel: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.backgroundColor = .clear
         self.isOpaque = true
-//        cityLabel.apply(.headerTtitle)
-//        temperatureLabel.apply(.headerTtitle)
-//        weatherDescLabel.apply(.headerSubTtitle)
+
+        cityLabel.apply(.headerTitle)
+        temperatureLabel.apply(.headerTitle)
+        weatherDescLabel.apply(.headerSubTitle)
     }
  
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {

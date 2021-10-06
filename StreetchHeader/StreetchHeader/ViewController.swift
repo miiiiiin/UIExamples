@@ -62,7 +62,7 @@ extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let section = self.sections[indexPath.section]
-        print("cellforitemat section: \(section.itemCount)")
+        print("cellforitemat section: \(section.identifier)")
         switch section.identifier {
         case DayOfWeekVerticalContainerCell.identifier:
             guard let cell = collectionView.dequeueReusableCell(DayOfWeekVerticalContainerCell.self, for: indexPath) else { return UICollectionViewCell() }
