@@ -12,28 +12,32 @@ class DayOfWeekVerticalContainerCell: UICollectionViewCell, NibForName {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var items: [WeatherDay] = []
+    var items: [WeatherDaySlot] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         collectionView.register(DayOfWeekCell.self)
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.backgroundColor = .clear
         collectionView.isScrollEnabled = false
         collectionView.alwaysBounceVertical = false
     }
     
-    func reloadData(items: [WeatherDay]) {
+    func reloadData(items: [WeatherDaySlot]) {
         self.items = items
         collectionView.reloadData()
         guard let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
         flowLayout.scrollDirection = .vertical
-        flowLayout.itemSize = CGSize(width: self.frame.width, height: 50)
+        flowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width, height: 50)
+        
+        print("dayofweek cell items: \(items.count)")
+        
     }
 }
 
-extension DayOfWeekVerticalContainerCell: UICollectionViewDataSource {
+extension DayOfWeekVerticalContainerCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }

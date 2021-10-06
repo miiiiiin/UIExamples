@@ -13,3 +13,4 @@ import UIKit
     
     @objc optional func collectionView(_ collectionView: UICollectionView, kind: String, forSupplementary indexPath: IndexPath) -> UICollectionViewLayoutAttributes?
 }
+

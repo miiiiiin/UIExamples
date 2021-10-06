@@ -26,12 +26,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUp()
     }
     
     private func setUp() {
-        view.backgroundColor = .white
+        let cloudLayer = CALayer()
+        cloudLayer.fillCloudImage(self.view.bounds)
+        self.view.layer.addSublayer(cloudLayer)
+        view.backgroundColor = .clear
         collectionView.register(DayOfWeekVerticalContainerCell.self)
         collectionView.register(TimeSlotHorizontalContainerCell.self)
         collectionView.register(SummaryHeaderView.self, kind: UICollectionView.elementKindSectionHeader)
@@ -39,26 +41,38 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.collectionViewLayout = flowLayout
         collectionView.alwaysBounceVertical = false
+        collectionView.backgroundColor = .clear
         view.addSubview(collectionView)
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let headerHeightMaxChange = Metrics.HorizontalWeatherCellHeight
+        var subOffset: CGFloat = 0
+        if offsetY > headerHeightMaxChange {
+            subOffset = offsetY - headerHeightMaxChange
+        } else {
+            subOffset = 0
+        }
+        NotificationCenter.default.post(name: Notification.Name(rawValue: NotificationNames.setOffset), object: subOffset)
+    }
 }
-
 
 extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let section = self.sections[indexPath.section]
-        
+        print("cellforitemat section: \(section.itemCount)")
         switch section.identifier {
         case DayOfWeekVerticalContainerCell.identifier:
             guard let cell = collectionView.dequeueReusableCell(DayOfWeekVerticalContainerCell.self, for: indexPath) else { return UICollectionViewCell() }
-//            cell.reloadData(items: section.items()) //fixme
+            cell.reloadData(items: section.items())
             cell.backgroundColor = .clear
             return cell
             
         case TimeSlotHorizontalContainerCell.identifier:
             guard let cell = collectionView.dequeueReusableCell(TimeSlotHorizontalContainerCell.self, for: indexPath) else { return UICollectionViewCell() }
-//            cell.reloadData(items: section.items()) //fixme
+            cell.reloadData(items: section.items())
             return cell
         default:
             break
@@ -99,19 +113,57 @@ extension ViewController: UICollectionViewDataSource {
         let section = self.sections[section]
         switch section.identifier {
         case TimeSlotHorizontalContainerCell.identifier:
-            return CGSize(width: collectionView.frame.width, height: 100) // fixme
-//            return CGSize(width: collectionView.rowWidth, height: Metrics.HeaderHeight)
+            return CGSize(width: collectionView.rowWidth, height: Metrics.HeaderHeight)
         default:
             return .zero
         }
     }
-
 }
 
-extension ViewController: UICollectionViewDelegateFlowLayout {
-
+extension ViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDelegateLayoutAttribute {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: 700)
+        let section = self.sections[indexPath.section]
+        print("sizeForItemAt: \(section.identifier), \(collectionView.rowWidth)")
+        switch section.identifier {
+        case DayOfWeekVerticalContainerCell.identifier:
+            return CGSize(width: collectionView.rowWidth, height: 700)
+            
+        case TimeSlotHorizontalContainerCell.identifier:
+            return CGSize(width: collectionView.rowWidth, height: Metrics.HorizontalWeatherCellHeight)
+        default:
+            break
+        }
+        return .zero
     }
+    
+    func collectionView(_ collectionView: UICollectionView, forItemAt indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        let section = self.sections[indexPath.section]
+        print("collectinoview layout foritem: \(UICollectionViewLayoutAttributes(forCellWith: indexPath))")
+        switch section.identifier {
+        case TimeSlotHorizontalContainerCell.identifier:
+            return StickyLayoutAttributes(forCellWith: indexPath)
+        default:
+            return nil
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, kind: String, forSupplementary indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        print("for supplmentary: \(kind)")
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            return OverlayAlphaLayoutAttributes(forSupplementaryViewOfKind: kind, with: indexPath)
+        default:
+            return nil
+        }
+    }
+}
 
+struct Metrics {
+    static let HeaderHeight: CGFloat = 250
+    static let HorizontalWeatherCellHeight: CGFloat = 130
+}
+
+struct NotificationNames {
+    static let setOffset = "setOffset"
 }

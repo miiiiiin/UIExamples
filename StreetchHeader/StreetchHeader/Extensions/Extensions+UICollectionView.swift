@@ -26,4 +26,19 @@ extension UICollectionView {
         for indexPath: IndexPath) -> T? {
         return dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: reusableCell.identifier, for: indexPath) as? T
     }
+    
+    var rowWidth: CGFloat {
+        guard let collectionViewLayout = collectionViewLayout as? UICollectionViewFlowLayout else {
+            return safeAreaLayoutGuide.layoutFrame.width
+                - contentInset.left
+                - contentInset.right
+        }
+        
+        let sectionInset = collectionViewLayout.sectionInset
+        return safeAreaLayoutGuide.layoutFrame.width
+            - sectionInset.left
+            - sectionInset.right
+            - contentInset.left
+            - contentInset.right
+    }
 }

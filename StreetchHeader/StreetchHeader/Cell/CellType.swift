@@ -32,4 +32,23 @@ extension CellType: CellAdapter {
             return TimeSlotHorizontalContainerCell.identifier
         }
     }
+    
+//    func item<T>(for index: Int) -> T? where T : Equatable {
+//        switch self {
+//        case .dayOfWeek(let section):
+//            return section.items[index] as? T
+//        case .timeHorizontal(let section):
+//            return section.items[index] as? T
+//        }
+//    }
+    
+    func items<T: Equatable>() -> [T] {
+        switch self {
+        case .dayOfWeek(let section):
+            return section.items as? [T] ?? []
+        case .timeHorizontal(let section):
+            return section.items as? [T]
+                ?? []
+        }
+    }
 }

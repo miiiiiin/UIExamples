@@ -34,9 +34,9 @@ class DayOfWeekView: UIView, NibLodable {
         representImage.contentMode = .scaleAspectFit
     }
     
-    func configCell(_ item: WeatherDay) {
+    func configCell(_ item: WeatherDaySlot) {
         self.dayOfWeekNameLabel.text = item.dayOfWeek.name
-        self.representImage.image = UIImage(named: item.imgName)?.withRenderingMode(.alwaysTemplate)
+        self.representImage.image = UIImage(named: item.imageName)?.withRenderingMode(.alwaysTemplate)
         self.highestLabel.text = String(item.highestTemperature)
         self.lowestLabel.text = String(item.lowestTemperature)
     }

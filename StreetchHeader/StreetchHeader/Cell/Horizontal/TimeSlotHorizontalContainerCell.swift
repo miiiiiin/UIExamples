@@ -18,6 +18,7 @@ class TimeSlotHorizontalContainerCell: UICollectionViewCell, NibForName {
         
         slotCollectionView.register(TimeSlotWeatherCell.self)
         slotCollectionView.dataSource = self
+        slotCollectionView.delegate = self
         slotCollectionView.backgroundColor = .clear
 
         if let flowLayout = slotCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
@@ -29,10 +30,11 @@ class TimeSlotHorizontalContainerCell: UICollectionViewCell, NibForName {
     func reloadData(items: [WeatherTimeSlot]) {
         self.items = items
         slotCollectionView.reloadData()
+        print("weather time count: \(items.count)")
     }
 }
 
-extension TimeSlotHorizontalContainerCell: UICollectionViewDataSource {
+extension TimeSlotHorizontalContainerCell: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         self.items.count
