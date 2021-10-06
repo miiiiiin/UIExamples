@@ -18,7 +18,7 @@ class SummaryHeaderView: UICollectionReusableView, NibForName {
         super.awakeFromNib()
         self.backgroundColor = .clear
         self.isOpaque = true
-
+        print("summeryheaderview check: \(cityLabel), \(temperatureLabel)")
         cityLabel.apply(.headerTitle)
         temperatureLabel.apply(.headerTitle)
         weatherDescLabel.apply(.headerSubTitle)
@@ -29,7 +29,7 @@ class SummaryHeaderView: UICollectionReusableView, NibForName {
         guard let layoutAttributes = layoutAttributes as? OverlayAlphaLayoutAttributes else {
             return
         }
-        temperatureLabel.alpha = layoutAttributes.headerOverlayAlpha
-        weatherDescLabel.alpha = layoutAttributes.headerOverlayAlpha
+//        temperatureLabel.alpha = layoutAttributes.headerOverlayAlpha
+//        weatherDescLabel.alpha = layoutAttributes.headerOverlayAlpha
     }
 }

@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     var header: WeatherHeader = WeatherHeader(city: "Chicago", weatherDesc: "sunny", temperature: 25)
     
     var sections: [CellType] = [
-        .dayOfWeek(WeatherDaySlotSection(items: WeatherDaySlot.sample)),
-        .timeHorizontal(WeatherTimeSlotSection(items: WeatherTimeSlot.sample))
+        .timeHorizontal(WeatherTimeSlotSection(items: WeatherTimeSlot.sample)),
+        .dayOfWeek(WeatherDaySlotSection(items: WeatherDaySlot.sample))
     ]
 
     private lazy var flowLayout: CustomLayout = {
@@ -34,9 +34,9 @@ class ViewController: UIViewController {
         cloudLayer.fillCloudImage(self.view.bounds)
         self.view.layer.addSublayer(cloudLayer)
         view.backgroundColor = .clear
+        collectionView.register(SummaryHeaderView.self, kind: UICollectionView.elementKindSectionHeader)
         collectionView.register(DayOfWeekVerticalContainerCell.self)
         collectionView.register(TimeSlotHorizontalContainerCell.self)
-        collectionView.register(SummaryHeaderView.self, kind: UICollectionView.elementKindSectionHeader)
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.collectionViewLayout = flowLayout
@@ -98,10 +98,17 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionView.elementKindSectionHeader:
+//            guard let cell = collectionView.dequeueReusableSupplementaryView(
+//                SummaryHeaderView.self,
+//                kind: kind,
+//                for: indexPath
+//            ) else { return UICollectionReusableView() }
+            
             guard let cell = collectionView.dequeueReusableSupplementaryView(SummaryHeaderView.self, kind: kind, for: indexPath) else { return UICollectionReusableView() }
-            cell.cityLabel.text = header.city
-            cell.weatherDescLabel.text = header.weatherDesc
-            cell.temperatureLabel.text = String(header.temperature)
+            print("headercell: \(cell), \(kind), \(cell.cityLabel)")
+//            cell.cityLabel.text = header.city
+//            cell.weatherDescLabel.text = header.weatherDesc
+//            cell.temperatureLabel.text = String(header.temperature)
             return cell
             
         default:

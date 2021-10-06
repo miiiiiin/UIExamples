@@ -24,6 +24,7 @@ extension UICollectionView {
         _ reusableCell: T.Type,
         kind: String,
         for indexPath: IndexPath) -> T? {
+        print("cell identifier:  \(reusableCell.identifier)")
         return dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: reusableCell.identifier, for: indexPath) as? T
     }
     

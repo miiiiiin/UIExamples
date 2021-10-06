@@ -9,42 +9,42 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0ML-pU-pes" customClass="SummaryHeaderView" customModule="StreetchHeader" customModuleProvider="target">
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hje-uy-G12" customClass="SummaryHeaderView" customModule="StreetchHeader" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="740" height="391"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srT-Ut-202">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TW-ee-20I">
                     <rect key="frame" x="349" y="44" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlk-ma-DTA">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhd-0j-RGb">
                     <rect key="frame" x="349" y="77" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlA-Ai-V4w">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNM-Ke-63B">
                     <rect key="frame" x="349" y="110" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="6Hq-f1-X0j"/>
+            <viewLayoutGuide key="safeArea" id="wj7-wS-lJU"/>
             <constraints>
-                <constraint firstItem="srT-Ut-202" firstAttribute="top" secondItem="6Hq-f1-X0j" secondAttribute="top" id="8Rg-vv-Msa"/>
-                <constraint firstItem="hlk-ma-DTA" firstAttribute="top" secondItem="srT-Ut-202" secondAttribute="bottom" constant="12" id="XEe-4a-7i0"/>
-                <constraint firstItem="DlA-Ai-V4w" firstAttribute="centerX" secondItem="6Hq-f1-X0j" secondAttribute="centerX" id="d4M-fI-UND"/>
-                <constraint firstItem="hlk-ma-DTA" firstAttribute="centerX" secondItem="6Hq-f1-X0j" secondAttribute="centerX" id="dsj-EU-Q9y"/>
-                <constraint firstItem="DlA-Ai-V4w" firstAttribute="top" secondItem="hlk-ma-DTA" secondAttribute="bottom" constant="12" id="hDu-Pf-nfe"/>
-                <constraint firstItem="srT-Ut-202" firstAttribute="centerX" secondItem="6Hq-f1-X0j" secondAttribute="centerX" id="sWa-c5-wdp"/>
+                <constraint firstItem="xNM-Ke-63B" firstAttribute="top" secondItem="dhd-0j-RGb" secondAttribute="bottom" constant="12" id="6oS-Nw-F5J"/>
+                <constraint firstItem="xNM-Ke-63B" firstAttribute="centerX" secondItem="wj7-wS-lJU" secondAttribute="centerX" id="Dyb-l1-mCc"/>
+                <constraint firstItem="0TW-ee-20I" firstAttribute="centerX" secondItem="wj7-wS-lJU" secondAttribute="centerX" id="awQ-tS-aYR"/>
+                <constraint firstItem="dhd-0j-RGb" firstAttribute="top" secondItem="0TW-ee-20I" secondAttribute="bottom" constant="12" id="cjr-oN-zcv"/>
+                <constraint firstItem="0TW-ee-20I" firstAttribute="top" secondItem="wj7-wS-lJU" secondAttribute="top" id="oax-97-gYT"/>
+                <constraint firstItem="dhd-0j-RGb" firstAttribute="centerX" secondItem="wj7-wS-lJU" secondAttribute="centerX" id="u1Z-8R-yUN"/>
             </constraints>
             <connections>
-                <outlet property="cityLabel" destination="srT-Ut-202" id="gJd-Xc-yEn"/>
-                <outlet property="temperatureLabel" destination="DlA-Ai-V4w" id="e0q-1U-GTX"/>
-                <outlet property="weatherDescLabel" destination="hlk-ma-DTA" id="w3F-j6-czW"/>
+                <outlet property="cityLabel" destination="0TW-ee-20I" id="5MM-pc-4gU"/>
+                <outlet property="temperatureLabel" destination="xNM-Ke-63B" id="X42-2w-82b"/>
+                <outlet property="weatherDescLabel" destination="dhd-0j-RGb" id="zc5-jh-doh"/>
             </connections>
             <point key="canvasLocation" x="210.1449275362319" y="161.71875"/>
         </collectionReusableView>
