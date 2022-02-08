@@ -1,0 +1,6 @@
+framework module Pods_StickyTableViewTests {
+  umbrella header "Pods-StickyTableViewTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

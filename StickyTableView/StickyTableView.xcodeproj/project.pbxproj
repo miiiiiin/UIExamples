@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7D3A7F0527B22A4B001FDB0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A7F0427B22A4B001FDB0A /* AppDelegate.swift */; };
-		7D3A7F0927B22A4B001FDB0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A7F0827B22A4B001FDB0A /* ViewController.swift */; };
-		7D3A7F0C27B22A4B001FDB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3A7F0A27B22A4B001FDB0A /* Main.storyboard */; };
 		7D3A7F0E27B22A4D001FDB0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3A7F0D27B22A4D001FDB0A /* Assets.xcassets */; };
 		7D3A7F1127B22A4D001FDB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3A7F0F27B22A4D001FDB0A /* LaunchScreen.storyboard */; };
 		7D3A7F1C27B22A4D001FDB0A /* StickyTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A7F1B27B22A4D001FDB0A /* StickyTableViewTests.swift */; };
@@ -21,6 +19,17 @@
 		7D3A7F3E27B22E35001FDB0A /* IndexPath+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A7F3D27B22E35001FDB0A /* IndexPath+Extensions.swift */; };
 		7D3A7F4027B22E3E001FDB0A /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A7F3F27B22E3E001FDB0A /* UITableViewCell+Extensions.swift */; };
 		7D3A7F4227B22E85001FDB0A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A7F4127B22E84001FDB0A /* TableViewController.swift */; };
+		7D3A7F4A27B238EB001FDB0A /* StickyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A7F4927B238EB001FDB0A /* StickyTableView.swift */; };
+		7D3A7F4D27B245AE001FDB0A /* ClassIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A7F4C27B245AE001FDB0A /* ClassIdentifiable.swift */; };
+		7D3A7F5127B24655001FDB0A /* UITableView+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A7F5027B24655001FDB0A /* UITableView+Identifiable.swift */; };
+		7D3A7F5327B24770001FDB0A /* StickyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A7F5227B24770001FDB0A /* StickyTableViewCell.swift */; };
+		7D3A7F5527B24783001FDB0A /* StandardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A7F5427B24783001FDB0A /* StandardTableViewCell.swift */; };
+		7D3A7F5727B24C00001FDB0A /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3A7F5627B24C00001FDB0A /* PersonTableViewCell.swift */; };
+		7D3A7F5F27B24DB3001FDB0A /* data1.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D3A7F5E27B24DB3001FDB0A /* data1.json */; };
+		7D3A7F6127B24DBC001FDB0A /* data2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7D3A7F6027B24DBC001FDB0A /* data2.json */; };
+		85A695D8C90B67D71C512EAB /* Pods_StickyTableView_StickyTableViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B7BADE90A737D29D9838B8 /* Pods_StickyTableView_StickyTableViewUITests.framework */; };
+		B975F41284C23B76690E7470 /* Pods_StickyTableViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C00D5D9E8AD56AA14ED255 /* Pods_StickyTableViewTests.framework */; };
+		FCDA4E3F108704FC6C632872 /* Pods_StickyTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA418B2C861E638DCCE81847 /* Pods_StickyTableView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37C5854B0689528DC7E25A44 /* Pods-StickyTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickyTableView.debug.xcconfig"; path = "Target Support Files/Pods-StickyTableView/Pods-StickyTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		4BC230F48A5475AA6EC485A6 /* Pods-StickyTableView-StickyTableViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickyTableView-StickyTableViewUITests.release.xcconfig"; path = "Target Support Files/Pods-StickyTableView-StickyTableViewUITests/Pods-StickyTableView-StickyTableViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		63C00D5D9E8AD56AA14ED255 /* Pods_StickyTableViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StickyTableViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D6880FF44DC11821E03769C /* Pods-StickyTableViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickyTableViewTests.debug.xcconfig"; path = "Target Support Files/Pods-StickyTableViewTests/Pods-StickyTableViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D3A7F0127B22A4B001FDB0A /* StickyTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickyTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D3A7F0427B22A4B001FDB0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D3A7F0827B22A4B001FDB0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7D3A7F0B27B22A4B001FDB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D3A7F0D27B22A4D001FDB0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D3A7F1027B22A4D001FDB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D3A7F1227B22A4D001FDB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +70,19 @@
 		7D3A7F3D27B22E35001FDB0A /* IndexPath+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexPath+Extensions.swift"; sourceTree = "<group>"; };
 		7D3A7F3F27B22E3E001FDB0A /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		7D3A7F4127B22E84001FDB0A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		7D3A7F4927B238EB001FDB0A /* StickyTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyTableView.swift; sourceTree = "<group>"; };
+		7D3A7F4C27B245AE001FDB0A /* ClassIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassIdentifiable.swift; sourceTree = "<group>"; };
+		7D3A7F5027B24655001FDB0A /* UITableView+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Identifiable.swift"; sourceTree = "<group>"; };
+		7D3A7F5227B24770001FDB0A /* StickyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyTableViewCell.swift; sourceTree = "<group>"; };
+		7D3A7F5427B24783001FDB0A /* StandardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTableViewCell.swift; sourceTree = "<group>"; };
+		7D3A7F5627B24C00001FDB0A /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		7D3A7F5E27B24DB3001FDB0A /* data1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data1.json; sourceTree = "<group>"; };
+		7D3A7F6027B24DBC001FDB0A /* data2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data2.json; sourceTree = "<group>"; };
+		9BF92925B93A65D1E3021953 /* Pods-StickyTableViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickyTableViewTests.release.xcconfig"; path = "Target Support Files/Pods-StickyTableViewTests/Pods-StickyTableViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF1CDD1FA00AC2573FDF4A64 /* Pods-StickyTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickyTableView.release.xcconfig"; path = "Target Support Files/Pods-StickyTableView/Pods-StickyTableView.release.xcconfig"; sourceTree = "<group>"; };
+		D168883695E5A41E9AEA7AB9 /* Pods-StickyTableView-StickyTableViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickyTableView-StickyTableViewUITests.debug.xcconfig"; path = "Target Support Files/Pods-StickyTableView-StickyTableViewUITests/Pods-StickyTableView-StickyTableViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2B7BADE90A737D29D9838B8 /* Pods_StickyTableView_StickyTableViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StickyTableView_StickyTableViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA418B2C861E638DCCE81847 /* Pods_StickyTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StickyTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCDA4E3F108704FC6C632872 /* Pods_StickyTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B975F41284C23B76690E7470 /* Pods_StickyTableViewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +106,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85A695D8C90B67D71C512EAB /* Pods_StickyTableView_StickyTableViewUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B2348DC06CCD358EBA941A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37C5854B0689528DC7E25A44 /* Pods-StickyTableView.debug.xcconfig */,
+				BF1CDD1FA00AC2573FDF4A64 /* Pods-StickyTableView.release.xcconfig */,
+				D168883695E5A41E9AEA7AB9 /* Pods-StickyTableView-StickyTableViewUITests.debug.xcconfig */,
+				4BC230F48A5475AA6EC485A6 /* Pods-StickyTableView-StickyTableViewUITests.release.xcconfig */,
+				6D6880FF44DC11821E03769C /* Pods-StickyTableViewTests.debug.xcconfig */,
+				9BF92925B93A65D1E3021953 /* Pods-StickyTableViewTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1CFD40057B3E2B8AC450009E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA418B2C861E638DCCE81847 /* Pods_StickyTableView.framework */,
+				D2B7BADE90A737D29D9838B8 /* Pods_StickyTableView_StickyTableViewUITests.framework */,
+				63C00D5D9E8AD56AA14ED255 /* Pods_StickyTableViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7D3A7EF827B22A4B001FDB0A = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +143,8 @@
 				7D3A7F1A27B22A4D001FDB0A /* StickyTableViewTests */,
 				7D3A7F2427B22A4D001FDB0A /* StickyTableViewUITests */,
 				7D3A7F0227B22A4B001FDB0A /* Products */,
+				0B2348DC06CCD358EBA941A4 /* Pods */,
+				1CFD40057B3E2B8AC450009E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,12 +161,13 @@
 		7D3A7F0327B22A4B001FDB0A /* StickyTableView */ = {
 			isa = PBXGroup;
 			children = (
+				7D3A7F5827B24D27001FDB0A /* Assets */,
+				7D3A7F4B27B245A4001FDB0A /* Utils */,
+				7D3A7F4827B238E1001FDB0A /* Table */,
 				7D3A7F3C27B22E29001FDB0A /* Extensions */,
 				7D3A7F3B27B22E20001FDB0A /* Cells */,
 				7D3A7F3427B22A9A001FDB0A /* Models */,
 				7D3A7F0427B22A4B001FDB0A /* AppDelegate.swift */,
-				7D3A7F0827B22A4B001FDB0A /* ViewController.swift */,
-				7D3A7F0A27B22A4B001FDB0A /* Main.storyboard */,
 				7D3A7F0D27B22A4D001FDB0A /* Assets.xcassets */,
 				7D3A7F0F27B22A4D001FDB0A /* LaunchScreen.storyboard */,
 				7D3A7F1227B22A4D001FDB0A /* Info.plist */,
@@ -153,6 +206,9 @@
 		7D3A7F3B27B22E20001FDB0A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				7D3A7F5227B24770001FDB0A /* StickyTableViewCell.swift */,
+				7D3A7F5427B24783001FDB0A /* StandardTableViewCell.swift */,
+				7D3A7F5627B24C00001FDB0A /* PersonTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -162,8 +218,34 @@
 			children = (
 				7D3A7F3D27B22E35001FDB0A /* IndexPath+Extensions.swift */,
 				7D3A7F3F27B22E3E001FDB0A /* UITableViewCell+Extensions.swift */,
+				7D3A7F5027B24655001FDB0A /* UITableView+Identifiable.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7D3A7F4827B238E1001FDB0A /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				7D3A7F4927B238EB001FDB0A /* StickyTableView.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		7D3A7F4B27B245A4001FDB0A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7D3A7F4C27B245AE001FDB0A /* ClassIdentifiable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7D3A7F5827B24D27001FDB0A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7D3A7F5E27B24DB3001FDB0A /* data1.json */,
+				7D3A7F6027B24DBC001FDB0A /* data2.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D3A7F2B27B22A4D001FDB0A /* Build configuration list for PBXNativeTarget "StickyTableView" */;
 			buildPhases = (
+				EF9B2EF60D494DA5876481A9 /* [CP] Check Pods Manifest.lock */,
 				7D3A7EFD27B22A4B001FDB0A /* Sources */,
 				7D3A7EFE27B22A4B001FDB0A /* Frameworks */,
 				7D3A7EFF27B22A4B001FDB0A /* Resources */,
+				81E5E31B1A309E6FCB3864B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +274,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D3A7F2E27B22A4D001FDB0A /* Build configuration list for PBXNativeTarget "StickyTableViewTests" */;
 			buildPhases = (
+				3E693BB153036E989096249B /* [CP] Check Pods Manifest.lock */,
 				7D3A7F1327B22A4D001FDB0A /* Sources */,
 				7D3A7F1427B22A4D001FDB0A /* Frameworks */,
 				7D3A7F1527B22A4D001FDB0A /* Resources */,
@@ -208,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D3A7F3127B22A4D001FDB0A /* Build configuration list for PBXNativeTarget "StickyTableViewUITests" */;
 			buildPhases = (
+				530960AF691BAACC8AF9F3D6 /* [CP] Check Pods Manifest.lock */,
 				7D3A7F1D27B22A4D001FDB0A /* Sources */,
 				7D3A7F1E27B22A4D001FDB0A /* Frameworks */,
 				7D3A7F1F27B22A4D001FDB0A /* Resources */,
+				78B098B790CA75C649A1BE04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,7 +359,8 @@
 			files = (
 				7D3A7F1127B22A4D001FDB0A /* LaunchScreen.storyboard in Resources */,
 				7D3A7F0E27B22A4D001FDB0A /* Assets.xcassets in Resources */,
-				7D3A7F0C27B22A4B001FDB0A /* Main.storyboard in Resources */,
+				7D3A7F6127B24DBC001FDB0A /* data2.json in Resources */,
+				7D3A7F5F27B24DB3001FDB0A /* data1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,18 +380,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E693BB153036E989096249B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StickyTableViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		530960AF691BAACC8AF9F3D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StickyTableView-StickyTableViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78B098B790CA75C649A1BE04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StickyTableView-StickyTableViewUITests/Pods-StickyTableView-StickyTableViewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StickyTableView-StickyTableViewUITests/Pods-StickyTableView-StickyTableViewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StickyTableView-StickyTableViewUITests/Pods-StickyTableView-StickyTableViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81E5E31B1A309E6FCB3864B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StickyTableView/Pods-StickyTableView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StickyTableView/Pods-StickyTableView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StickyTableView/Pods-StickyTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF9B2EF60D494DA5876481A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StickyTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7D3A7EFD27B22A4B001FDB0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7D3A7F3A27B22AD9001FDB0A /* Section.swift in Sources */,
+				7D3A7F5727B24C00001FDB0A /* PersonTableViewCell.swift in Sources */,
+				7D3A7F5127B24655001FDB0A /* UITableView+Identifiable.swift in Sources */,
+				7D3A7F5527B24783001FDB0A /* StandardTableViewCell.swift in Sources */,
 				7D3A7F3827B22AD0001FDB0A /* Row.swift in Sources */,
-				7D3A7F0927B22A4B001FDB0A /* ViewController.swift in Sources */,
+				7D3A7F4A27B238EB001FDB0A /* StickyTableView.swift in Sources */,
+				7D3A7F4D27B245AE001FDB0A /* ClassIdentifiable.swift in Sources */,
 				7D3A7F4227B22E85001FDB0A /* TableViewController.swift in Sources */,
 				7D3A7F3E27B22E35001FDB0A /* IndexPath+Extensions.swift in Sources */,
 				7D3A7F4027B22E3E001FDB0A /* UITableViewCell+Extensions.swift in Sources */,
 				7D3A7F3627B22AA8001FDB0A /* CellType.swift in Sources */,
+				7D3A7F5327B24770001FDB0A /* StickyTableViewCell.swift in Sources */,
 				7D3A7F0527B22A4B001FDB0A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,14 +537,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7D3A7F0A27B22A4B001FDB0A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7D3A7F0B27B22A4B001FDB0A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7D3A7F0F27B22A4D001FDB0A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -478,6 +666,7 @@
 		};
 		7D3A7F2C27B22A4D001FDB0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C5854B0689528DC7E25A44 /* Pods-StickyTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,7 +677,6 @@
 				INFOPLIST_FILE = StickyTableView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,6 +694,7 @@
 		};
 		7D3A7F2D27B22A4D001FDB0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1CDD1FA00AC2573FDF4A64 /* Pods-StickyTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -516,7 +705,6 @@
 				INFOPLIST_FILE = StickyTableView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -534,6 +722,7 @@
 		};
 		7D3A7F2F27B22A4D001FDB0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6880FF44DC11821E03769C /* Pods-StickyTableViewTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,6 +748,7 @@
 		};
 		7D3A7F3027B22A4D001FDB0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BF92925B93A65D1E3021953 /* Pods-StickyTableViewTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -584,6 +774,7 @@
 		};
 		7D3A7F3227B22A4D001FDB0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D168883695E5A41E9AEA7AB9 /* Pods-StickyTableView-StickyTableViewUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,6 +798,7 @@
 		};
 		7D3A7F3327B22A4D001FDB0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BC230F48A5475AA6EC485A6 /* Pods-StickyTableView-StickyTableViewUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
