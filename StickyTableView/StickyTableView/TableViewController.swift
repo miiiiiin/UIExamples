@@ -95,15 +95,33 @@ class TableViewController: UIViewController {
 
 extension TableViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return tableView == self.tableView ? sections.count : 1 // sticky table view always has single section
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return tableView == self.tableView ? sections[section].numberOfFlattenRows() : stickyReference.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {        
-        return UITableViewCell()
+//        return UITableViewCell()
+        // use sticky reference conversion to find the reference index path when displaying sticky table view
+        let useIndexPath = tableView == self.tableView ? indexPath : (stickyReference[indexPath.row])
+
+        let item = sections[useIndexPath.section].get(flattenRowAt: useIndexPath.row)
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: item.cellIdentifier, for: indexPath)
+//        if let vehicleCell = cell as? VehicleTableViewCell, let data = item as? VehicleRow {
+//            vehicleCell.bind(data: data)
+//        }
+//        else if let personCell = cell as? PersonTableViewCell, let data = item as? PersonRow {
+//            personCell.bind(data: data)
+//        }
+//        else
+        
+        if let standardCell = cell as? StandardTableViewCell, let data = item as? StandardRow {
+            standardCell.bind(data: data)
+        }
+        return cell
     }
     
 }

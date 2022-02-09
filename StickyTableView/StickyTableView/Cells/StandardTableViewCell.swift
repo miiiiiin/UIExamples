@@ -49,4 +49,9 @@ class StandardTableViewCell: StickyTableViewCell {
             make.height.equalTo(14)
         }
     }
+    
+    func bind(data: StandardRow) {
+        titleLabel.text = data.title
+        detailLabel.text = data.detail
+    }
 }

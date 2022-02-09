@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum CellType {
-    case vehicle
-    case person
-    case `default`
+enum CellType: String {
+    case vehicle = "vehicle"
+    case person = "person"
+    case `default` = "default"
 }

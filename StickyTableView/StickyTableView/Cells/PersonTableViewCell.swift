@@ -61,4 +61,10 @@ class PersonTableViewCell: StickyTableViewCell {
             make.height.equalTo(14)
         }
     }
+    
+    func bind(data: PersonRow) {
+        iconView.image = UIImage(named: data.person)
+        titleLabel.text = data.title
+        detailLabel.text = data.detail
+    }
 }
